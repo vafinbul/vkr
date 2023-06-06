@@ -1,0 +1,16 @@
+# curl -X POST -H "Content-Type: application/json" -d '{}' http://localhost:5000/prewarm
+POST http://localhost:5000/prewarm
+Content-Type: application/json
+
+{}
+
+###
+
+POST http://localhost:5000/prewarm
+Content-Type: application/json
+
+{"timestamp":"2023-05-17 20:10:01"}
+
+###
+
+

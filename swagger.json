@@ -1,0 +1,29 @@
+{
+  "paths": {
+    "/prewarm": {
+      "post": {
+        "summary": "Prewarm the PostgreSQL cache",
+        "description": "Endpoint for prewarming the PostgreSQL cache",
+        "parameters": [
+          {
+            "name": "timestamp",
+            "in": "body",
+            "description": "Timestamp for retrieving previous data snapshots",
+            "required": false,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          },
+          "400": {
+            "description": "Bad request"
+          }
+        }
+      }
+    }
+  }
+}
